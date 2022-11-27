@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1 className={styles.title}>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt temporibus
         labore totam molestias reprehenderit delectus saepe. Sequi pariatur,
@@ -21,7 +21,7 @@ export default function Home() {
         adipisci non obcaecati provident nemo eligendi ut ipsam ratione, quae
         eveniet.
       </p>
-      <Link href='/ninjas'>see lists</Link>
+      <Link href='/ninjas' className={styles.btn}>see lists</Link>
     </div>
   );
 }
