@@ -1,0 +1,16 @@
+.ninjas__container{
+    padding: 0 60px;
+}
+
+.ninja{
+    padding: 20px 5px;
+    background-color: whitesmoke;
+    border-left: 6px solid white;
+    border-radius: 4px;
+    transition: 0.98s ease;
+}
+
+.ninja:hover{
+    border-left: 6px solid blue;
+    box-shadow: 6px 5px 2px grey;
+}
