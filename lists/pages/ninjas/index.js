@@ -20,11 +20,11 @@ const Ninjas = ({ ninjas }) => {
         <div className={styles.ninjas__container}>
             <h1>All Ninjas</h1>
             {ninjas.map(ninja =>(
-                <div key={ ninja.id }>
+                <Link href={'/ninjas/' + ninja.id} key={ ninja.id }>
                    <h3 className={styles.ninja}>
-                    <a>{ ninja.name }</a>
+                    { ninja.name }
                     </h3>
-                </div>
+                </Link>
             ))
 
             }
