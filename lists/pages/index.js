@@ -7,6 +7,11 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>next | Home</title>
+      <meta name="keywords" content="next" />
+    </Head>
     <div>
       <h1 className={styles.title}>Home Page</h1>
       <p>
@@ -23,5 +28,6 @@ export default function Home() {
       </p>
       <Link href='/ninjas' className={styles.btn}>see lists</Link>
     </div>
+    </>
   );
 }
